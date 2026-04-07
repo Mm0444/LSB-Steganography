@@ -139,9 +139,3 @@ http://127.0.0.1:8080
 This project is licensed under the MIT License.
 
 ---
-
-## 👨‍💻 Author
-
-Developed for educational purposes and to demonstrate steganography concepts in web applications.
-
----
