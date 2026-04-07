@@ -1,4 +1,4 @@
-# 🔐 LSB-Steganography Web Application
+p# 🔐 LSB-Steganography Web Application
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Flask](https://img.shields.io/badge/Flask-Web%20Framework-green)
@@ -133,15 +133,6 @@ http://127.0.0.1:8080
 
 ---
 
-## 🔮 Future Improvements
-
-* 👤 User authentication system
-* 📂 Image gallery & history tracking
-* 🔍 Search functionality
-* 🌍 Cloud deployment (Render / Railway)
-* 🎨 Enhanced UI/UX
-
----
 
 ## 📜 License
 
