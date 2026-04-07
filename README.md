@@ -1,4 +1,4 @@
-p# 🔐 LSB-Steganography Web Application
+LSB-Steganography Web Application🔐
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Flask](https://img.shields.io/badge/Flask-Web%20Framework-green)
@@ -35,10 +35,7 @@ The change is minimal and usually invisible to the human eye.
 * 🔐 Encode secret messages into images
 * 🔓 Decode hidden messages from images
 * 🖼️ Upload and download image files
-* 🌐 Web-based user interface
 * 🔒 Optional encryption (Fernet)
-* 📂 Optional image storage with database (SQLite)
-* ⚡ Fast and lightweight processing
 
 ---
 
