@@ -1,9 +1,12 @@
-LSB-Steganography Web Application🔐
-
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Flask](https://img.shields.io/badge/Flask-Web%20Framework-green)
-![OpenCV](https://img.shields.io/badge/OpenCV-Image%20Processing-red)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+<div align="center">
+  <h1>LSB-Steganography Web Application🔐</h1>
+   <p>
+    <img src="https://img.shields.io/badge/Python-3.x-blue" alt="Python" />
+    <img src="https://img.shields.io/badge/Flask-Web%20Framework-green" alt="Flask" />
+    <img src="https://img.shields.io/badge/OpenCV-Image%20Processing-red" alt="OpenCV" />
+    <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License" />
+  </p>
+</div>
 
 ---
 
