@@ -71,7 +71,7 @@ LSB-Steganography/
 ### 1️⃣ Clone the repository
 
 ```
-git clone https://github.com/your-username/LSB-Steganography.git
+git clone https://github.com/Mm0444/LSB-Steganography.git 
 cd LSB-Steganography
 ```
 
