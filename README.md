@@ -1,141 +1,57 @@
-<div align="center">
-  <h1>LSB-Steganography Web Application🔐</h1>
-   <p>
-    <img src="https://img.shields.io/badge/Python-3.x-blue" alt="Python" />
-    <img src="https://img.shields.io/badge/Flask-Web%20Framework-green" alt="Flask" />
-    <img src="https://img.shields.io/badge/OpenCV-Image%20Processing-red" alt="OpenCV" />
-    <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License" />
-  </p>
-</div>
+# LSB Steganography Web App
 
----
+This is a complete web application that lets you hide secret messages within images using Least Significant Bit (LSB) steganography. Built with Flask, OpenCV, NumPy, Cryptography, and a beautiful Bootstrap 5 frontend featuring a glassmorphism design.
 
-## 📌 Overview
+## Features
+- **Encode**: Upload any image (PNG/JPG), enter a text message, and hide it inside the image.
+- **Decode**: Upload an encoded image to extract the hidden message.
+- **Optional Encryption**: Securely encrypt your messages with a password before hiding them inside the image using Fernet (AES).
+- **Modern UI**: Smooth interface with glass cards, drag & drop image uploads, async file handling, and gradient text.
 
-LSB-Steganography is a web-based application that allows users to **hide and extract secret messages within images** using the *Least Significant Bit (LSB)* technique.
-
-The application provides a simple and intuitive interface for encoding and decoding messages, making it suitable for educational purposes, demonstrations, and basic secure communication experiments.
-
----
-
-## 🧠 What is LSB Steganography?
-
-Least Significant Bit (LSB) steganography is a technique used to embed data into digital images by modifying the least significant bits of pixel values.
-
-Example:
-
-```
-Original pixel: 10110010
-Modified pixel: 10110011
-```
-
-The change is minimal and usually invisible to the human eye.
-
----
-
-## 🚀 Features
-
-* 🔐 Encode secret messages into images
-* 🔓 Decode hidden messages from images
-* 🖼️ Upload and download image files
-* 🔒 Optional encryption (Fernet)
-
----
-
-## 🛠️ Tech Stack
-
-* **Backend:** Python (Flask)
-* **Frontend:** HTML, CSS, JavaScript
-* **Image Processing:** OpenCV, NumPy
-* **Encryption:** Cryptography (Fernet)
-* **Database (optional):** SQLite / SQLAlchemy
-
----
-
-## 📂 Project Structure
-
+## Project Structure
 ```
 LSB-Steganography/
-│
-├── app.py              # Flask backend
-├── lsb.py              # Core steganography logic
-├── templates/          # HTML templates
-├── static/             # CSS & JavaScript files
-├── uploads/            # Encoded images (optional)
-├── database.db         # SQLite database (optional)
-├── requirements.txt
-└── README.md
+├── app.py                  # Flask backend server
+├── lsb.py                  # Core steganography & encryption logic
+├── requirements.txt        # Python dependency list
+├── README.md               # Setup instructions
+├── templates/
+│   └── index.html          # Frontend HTML user interface
+└── static/
+    ├── css/
+    │   └── style.css       # Custom styling (animations, themes)
+    └── js/
+        └── script.js       # Client side API requests & UI logic
 ```
 
----
+## How to Install and Run
 
-## ⚙️ Installation & Setup
+### Prerequisites
+- Python 3.8+ installed on your system.
 
-### 1️⃣ Clone the repository
-
-```
-git clone https://github.com/Mm0444/LSB-Steganography.git 
-cd LSB-Steganography
-```
-
-### 2️⃣ Install dependencies
-
-```
-python -m pip install -r requirements.txt
+### 1. Install Dependencies
+Open a terminal in the project folder and run:
+```bash
+pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the application
-
-```
+### 2. Run the App
+Launch the Flask server:
+```bash
 python app.py
 ```
 
-### 4️⃣ Open in browser
+### 3. Open the Application
+Open your web browser and go to:
+[http://localhost:8080](http://localhost:8080)
 
-```
-http://127.0.0.1:8080
-```
+## Security Note regarding Images
+When downloading an encoded image, it will be saved as a `.png` file. This is crucial because **PNG is a lossless format**. If you convert it or send it through platforms that heavily compress images (like WhatsApp or Facebook Messenger), the Least Significant Bits may be scrambled, and the message will be lost!
 
----
-
-## 🔄 How It Works
-
-### 🔐 Encoding Process
-
-1. User uploads an image
-2. Input message is converted to binary
-3. Binary data is embedded into image pixels (LSB)
-4. Encoded image is generated for download
-
-### 🔓 Decoding Process
-
-1. User uploads encoded image
-2. System reads least significant bits
-3. Binary data is reconstructed
-4. Original message is displayed
-
----
-
-## 💡 Use Cases
-
-* Secure message hiding
-* Digital watermarking
-* Cybersecurity learning
-* Data embedding experiments
-
----
-
-## ⚠️ Limitations
-
-* Works best with **PNG images** (lossless format)
-* JPEG compression may destroy hidden data
-* Not suitable for high-security applications
-
----
-
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
+## Technology Output
+- Python + Flask
+- OpenCV
+- NumPy
+- Cryptography (Fernet symmetric encryption)
+- Bootstrap 5
+- JavaScript Fetch API
